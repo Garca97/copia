@@ -1,27 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-    "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html>
 <html>
-<style type="text/css">
-body {
-    background-image:
-        url('http://cdn.crunchify.com/wp-content/uploads/2013/03/Crunchify.bg_.300.png');
-}
-</style>
- 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Estudiantes</title>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">       
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/myscript.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
     </head>
     <body>
-        <div align="center" style="margin-top: 50px;">
-            <h1>Esto creo que si funciona</h1>   
-            <form action="SerrvletAdministrador">
-                <input type="submit" value="vamos!!">
-            </form>
-        </div>
-    
-    
-</body>
+        <div class="container">
+            <div class="card card-container">
+                <img class="profile-img-card" src="http://keperawatan.unja.ac.id/wp-content/uploads/2014/03/dosen.png" alt="" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form class="form-signin" action="Login">
+                    <span id="Usuario" class="reauth-email"></span>
+                    <input type="text" name="Usuario" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+                    <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Password" required>      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
+                </form>
+            </div><!-- /card-container -->
+        </div><!-- /container -->
+    </body>
 </html>
