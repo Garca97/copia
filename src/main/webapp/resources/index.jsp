@@ -16,8 +16,10 @@ body {
     </head>
     <body>
         <div align="center" style="margin-top: 50px;">
-            <h1>Hola!!!</h1>   
-            
+            <h1>Esto creo que si funciona</h1>   
+            <form action="SerrvletAdministrador">
+                <input type="submit" value="vamos!!">
+            </form>
         </div>
     
     
