@@ -5,11 +5,6 @@
  */
 package com.crunchify.jsp.servlet;
 
-import edu.co.sergio.mundo.dao.DAOEscuela;
-import edu.co.sergio.mundo.dao.DAOEstudiante;
-import edu.co.sergio.mundo.vo.Escuela;
-import edu.co.sergio.mundo.vo.Estudiante;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
