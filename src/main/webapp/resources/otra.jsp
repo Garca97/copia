@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% 
-   String nombre = String.valueOf(request.getAttribute("Hola"));
+   String nombre = String.valueOf(request.getAttribute("Usuario"));
+   String pass = String.valueOf(request.getAttribute("pass"));
 %>
 <!DOCTYPE html>
 <html>
@@ -230,7 +231,7 @@
         <div class="container">
             <div class="card card-container">
                 <h1><%=nombre %></h1>
-                
+                <h1><%=pass %></h1>
             </div><!-- /card-container -->
         </div><!-- /container -->
     </body>
