@@ -21,5 +21,15 @@
         <servlet-name>Administrador</servlet-name>
         <url-pattern>/Administrador</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>com.crunchify.jsp.servlet.ServletLogin</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/ServletLogin</url-pattern>
+    </servlet-mapping>
 
 </web-app>
