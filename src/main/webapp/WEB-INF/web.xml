@@ -6,7 +6,7 @@
     <display-name>CrunchifyJSPServletExample</display-name>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
         <welcome-file>default.html</welcome-file>
         <welcome-file>default.htm</welcome-file>
@@ -15,12 +15,12 @@
        
     <servlet>
         <servlet-name>Escuela</servlet-name>
-        <servlet-class>com.crunchify.jsp.servlet.ServletEscuela</servlet-class>
+        <servlet-class>com.crunchify.jsp.servlet.ServletAdministrador</servlet-class>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>Escuela</servlet-name>
-        <url-pattern>/Escuela</url-pattern>
+        <servlet-name>Administrador</servlet-name>
+        <url-pattern>/Administrador</url-pattern>
     </servlet-mapping>
 
 </web-app>
