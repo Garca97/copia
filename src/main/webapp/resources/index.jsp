@@ -230,7 +230,7 @@
             <div class="card card-container">
                 <img class="profile-img-card" src="http://keperawatan.unja.ac.id/wp-content/uploads/2014/03/dosen.png" alt="" />
                 <p id="profile-name" class="profile-name-card"></p>
-                <form class="form-signin" action="ServletLogin" method="POS">
+                <form class="form-signin" action="ServletLogin" method="POST">
                     <span id="Usuario" class="reauth-email"></span>
                     <input type="text" name="Usuario" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
                     <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="Password" required>      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
