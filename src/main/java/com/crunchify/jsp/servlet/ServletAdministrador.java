@@ -30,7 +30,7 @@ public class ServletAdministrador extends HttpServlet {
         List<Administrador> Admin = daoAdmin.findAll();
         //request.setAttribute("", escuelas);
         //Redireccionando la informacion
-        RequestDispatcher redireccion = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher redireccion = request.getRequestDispatcher("/resources/index.jsp");
         redireccion.forward(request, response);
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
