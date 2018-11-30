@@ -6,7 +6,6 @@
  */
 package com.crunchify.jsp.servlet;
 
-import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,8 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import edu.co.sergio.mundo.dao.AministradorDAO;
-import edu.co.sergio.mundo.vo.Administrador;
 import java.io.IOException;
 
 /**
@@ -26,9 +23,11 @@ public class ServletLogin extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        AministradorDAO daoAdmin = new AministradorDAO();
-        List<Administrador> Admin = daoAdmin.findAll();
-        request.setAttribute("Hola!!!!", "Hola");
+        String nombre =request.getParameter("Usuario");
+        String pass =request.getParameter("pass");
+        response.setContentType("text/html;charset=UTF-8");
+        request.setAttribute("Usuario", nombre);
+        request.setAttribute("pass", pass);
         //Redireccionando la informacion
         RequestDispatcher redireccion = request.getRequestDispatcher("/resources/otra.jsp");
         redireccion.forward(request, response);
